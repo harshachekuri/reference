@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h2{
+            margin-top: 50%;
+        }
+        div{
+            text-align: center;
+            width: 300px;
+            height: 400px ;
+            border: 2px solid black;
+            padding: 50px;
+            margin: 20px auto;
+          
+        }
+        button{
+            color: rgb(19, 20, 20);
+            background-color: aquamarine;
+        }
+    </style>
+    <script>
+        function f1(){
+            console.log(document)
+            var h2=document.getElementById("h2ref")
+            var div=document.getElementById("d1")
+            var p=document.getElementById("h3ref")
+            h2.innerText="hello javascript"
+            h2.style.color="white"
+            p.innerText="this is heaven"
+            div.style.backgroundColor="green"
+        }
+    </script>
+</head>
+<body >
+    <div id="d1">
+        <h2 id="h2ref">welcome to java script</h2>
+        <p id="h3ref">this is HTML document</p>
+        <button onclick="f1()">java script</button>
+    </div>
+</body>
+</html>

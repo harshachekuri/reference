@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h2{
+            margin-top: 50%;
+        }
+        div{
+            text-align: center;
+            width: 300px;
+            height: 400px ;
+            border: 2px solid black;
+            padding: 50px;
+            margin: 20px auto;
+            background-color: blanchedalmond;
+          
+        }
+        button{
+            background-color: rgb(129, 114, 143);
+        }
+    </style>
+    <script>
+        function fnred(){
+            var div=document.getElementById("d1")
+            div.style.backgroundColor="red"
+        }
+        function fnblack(){
+            var div=document.getElementById("d1")
+            div.style.backgroundColor="black"
+            div.style.color="white"
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <div id="d1" onmouseenter="fnred()" onmouseleave="fnblack()">
+        <h2 id="h2ref">welcome to java script</h2>
+        <p>this is html doc</p>
+        <button class="btn btn-success">PRESS</button>
+    </div>
+</body>
+</html>
